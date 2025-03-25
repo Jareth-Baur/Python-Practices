@@ -5,8 +5,17 @@ import numpy as np
 
 
 # Load Excel file
-df = pd.read_excel("C:/crime_data_with_issues.xlsx")
+df = pd.read_excel("resources/crime_data_with_issues.xlsx")
 print(df.head())
+
+import os
+
+file_path = "resources/crime_data_with_issues.xlsx"
+
+if os.path.exists(file_path):
+    print("File found!")
+else:
+    print("File NOT found. Check the path.")
 
 #count duplicate
 duplicate_count = df.duplicated().sum()

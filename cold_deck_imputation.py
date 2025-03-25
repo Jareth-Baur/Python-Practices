@@ -9,6 +9,7 @@ import pandas as pd
 import numpy as np
 from sklearn.preprocessing import LabelEncoder
 
+
 # Load the dataset
 df = pd.read_excel('crime_data_with_issues.xlsx')
 
